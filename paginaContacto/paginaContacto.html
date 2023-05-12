@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="shortcut icon" href="../img/placa-l.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/placa-l.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>L&H</title>
+    <title>L&H-Contactenos</title>
 </head>
 
 <body>
@@ -18,9 +18,9 @@
     <header>
         <nav>
             <a href="../index.html">Inicio</a>
-            <a href="#">Acerca De</a>
+            <a href="../acercaDe/acercaDe.html">Acerca De</a>
             <a href="mailto:leo.exerivero@gmail.com">Correo</a>
-            <a href="../paginaContacto/paginaContacto.html">Contacto</a>
+            <a href="#">Contacto</a>
 
 
         </nav>
@@ -31,39 +31,48 @@
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
                 <path d="M0.00,49.98 C93.95,156.42 319.13,-56.72 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: rgba(68, 181, 247, 0.733);"></path>
+                    style="stroke: none; fill: #59ABE3;"></path>
             </svg></div>
     </header>
-    <main>
-        <section class="contenedor1 sobre-nosotros">
-            <h2 class="titulo">Acerca de Nosotros</h2>
-            <div class="contenedor-sobre-nosotros">
-                <img src="img/AcercaDe.jpg" alt="" class="imagen-about-us">
 
-                <div class="contenido-textos">
-                    <h3 class="titulo-acerca">La mejor calidad de servicio</h3>
-                    <p>Somos una sociedad familiar, radicada en san luis desde hace 10 años, brindando soporte en toda
-                        la ciudad, en la zona rural y ciudad de San Luis dedicada al arreglo de computadoras, colocacion
-                        de antenas de WiFi, Directv, venta de
-                        hardware, Mantenimiento armado de cables, nuestros principales pilares como sociedad son los
-                        siguientes
-                    </p>
-                    <h3 class="titulo-acerca">Confiabilidad</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                        velit doloribus laboriosam ut.</p>
-                    <h3 class="titulo-acerca">Trayectoria</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                        velit doloribus laboriosam ut.</p>
-                    <h3 class="titulo-acerca">Servicios</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                        velit doloribus laboriosam ut.</p>
+    <div class="container">
+        <div class="row">
+            <h1 class="title">Contact us</h1>
+        </div>
+        <div class="row">
+            <h4 class="subtitle" style="text-align:center">We'd love to hear from you!</h4>
+        </div>
+        <div class="row input-container">
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <input type="text" required />
+                    <label>Nombre</label>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="col-md-6 col-sm-12">
+                <div class="styled-input">
+                    <input type="text" required />
+                    <label>Mail@</label>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="styled-input" style="float:right;">
+                    <input type="text" required />
+                    <label>Telefono</label>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <textarea required></textarea>
+                    <label>Mensaje</label>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="submit-btn">Send Message</div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer-distributed">
 
         <div class="footer-left">
@@ -130,7 +139,7 @@
     </section>
     <script src="https://kit.fontawesome.com/8413f115b4.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    </main>
+    
 </body>
 
 </html>

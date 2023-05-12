@@ -39,6 +39,7 @@ body {
 }
 
 .contenedor {
+    
     padding: 60px 0;
     width: 90%;
     max-width: 1000px;
@@ -116,7 +117,7 @@ header .textos-header {
 }
 
 .contenedor1 {
-    background: hsl(0, 0%, 100%);
+    background-color:rgba(40, 173, 250, 0.733); 
 }
 
 main .sobre-nosotros {
