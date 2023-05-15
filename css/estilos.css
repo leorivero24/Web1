@@ -143,7 +143,7 @@ header .textos-header {
 }
 
 #somos-proya .container {
-    background-color: black;
+/* background-color: black;*/
     display: flex;
     justify-content: space-evenly;
     text-align: center;
