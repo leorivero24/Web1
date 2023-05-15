@@ -109,7 +109,7 @@ header .textos-header {
 }
 
 
-/* about us */
+/* Presentacion */
 
 #somos-proya h2 {
     margin-bottom: 30px;
@@ -131,6 +131,7 @@ header .textos-header {
 }
 
 #somos-proya .texto {
+    color: white;
     font-size: 25px;
     text-align: justify;
     width: 50%;
@@ -142,6 +143,7 @@ header .textos-header {
 }
 
 #somos-proya .container {
+    background-color: black;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
