@@ -28,35 +28,30 @@ window.onscroll = function(){
 
 }
 
-const images = ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg", "imagen4.jpg"];
+var slideIndex = 0;
+var slides = [
+  "imagen1.jpg",
+  "imagen2.jpg",
+  "imagen3.jpg",
+  "imagen4.jpg",
+  "imagen5.jpg",
+  "imagen6.jpg"
+];
 
-    let currentIndex = 0;
-    const carouselImg = document.getElementById("carouselImg");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
+function showSlide() {
+  var slide = document.getElementById("slide");
+  slide.src = slides[slideIndex];
+}
 
-    function showImage() {
-      const imgSrc = images[currentIndex];
-      carouselImg.src = imgSrc;
-    }
+function changeSlide(n) {
+  slideIndex += n;
+  if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
+  } else if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+  showSlide();
+}
 
-    function sigImg() {
-      currentIndex++;
-      if (currentIndex >= images.length) {
-        currentIndex = 0;
-      }
-      showImage();
-    }
+showSlide();
 
-    function prevImg() {
-      currentIndex--;
-      if (currentIndex < 0) {
-        currentIndex = images.length - 1;
-      }
-      showImage();
-    }
-
-    nextBtn.addEventListener("click", sigImg);
-    prevBtn.addEventListener("click", prevImg);
-
-    showImage();

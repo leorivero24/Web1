@@ -65,13 +65,14 @@
         </section>
      </main>
     
-    <div class="carousel-container">
-        <h2 class="tituloC">Nuestros Trabajos</h2>
-        <button id="prevBtn"style="padding: 16px;"><</button>
-        <!-- <a id="prevBtn"><</a> -->
-            <img id="carouselImg" src="" alt="Imagen del carrusel">
-       <!-- <a id="nextBtn">></a> -->
-       <button id="nextBtn" style="padding: 16px;">></button>
+     <div class="carousel-container">
+        <h2 class="titulo-carrusel">Nuestros Trabajos</h2>
+        <button class="carousel-button carousel-button-prev" onclick="changeSlide(-1)">&lt;</button>
+        <div class="carousel">
+          <img id="slide" src="" alt="Slide">
+        </div>
+        <button class="carousel-button carousel-button-next" onclick="changeSlide(1)">&gt;</button>
+        <h2>Conectividad - Servicio Técnico PC</h2>
       </div>
   
     <footer class="footer-distributed">
