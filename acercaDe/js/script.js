@@ -1,5 +1,4 @@
 
-
 document.getElementById("button-up").addEventListener("click", scrollUp);
 
 function scrollUp(){
@@ -28,3 +27,36 @@ window.onscroll = function(){
     }
 
 }
+
+const images = ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg", "imagen4.jpg"];
+
+    let currentIndex = 0;
+    const carouselImg = document.getElementById("carouselImg");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    function showImage() {
+      const imgSrc = images[currentIndex];
+      carouselImg.src = imgSrc;
+    }
+
+    function sigImg() {
+      currentIndex++;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      showImage();
+    }
+
+    function prevImg() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+      }
+      showImage();
+    }
+
+    nextBtn.addEventListener("click", sigImg);
+    prevBtn.addEventListener("click", prevImg);
+
+    showImage();

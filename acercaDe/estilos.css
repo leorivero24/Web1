@@ -154,6 +154,77 @@ main .sobre-nosotros {
     text-align: justify;
 }
 
+/* carrusel */
+
+.tituloC {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+   margin-bottom: 50px;
+}
+
+.tituloC {
+    background: linear-gradient(rgba(68, 142, 253, 0.838), rgba(1, 18, 253, 0.781));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+.carousel-container {
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 5px;
+    
+  }
+  
+  #carouselImg {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    margin-bottom: -50px;
+    border: 1px solid #000;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, .8);
+  }
+
+  #prevBtn {
+    
+    
+    cursor: pointer;
+    padding: 16px;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 3px 0 0 3px;
+    border: solid #0e0000 2px;
+  }
+
+  #nextBtn {
+
+    
+ 
+    cursor: pointer;
+    padding: 16px;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    border: solid #070000 2px;
+    margin-bottom: 50px;
+   
+   
+  }
+
+  @media screen and (max-width:500px) {
+    #carousel-container{
+        width: 100%;
+    }
+    #prevBtn,
+    #nextBtn{
+        padding: 5px;
+    }
+}
+
 
 /* footer */
 
