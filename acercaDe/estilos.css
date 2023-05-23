@@ -186,10 +186,10 @@ main .sobre-nosotros {
     border: 1px solid #000;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, .8);
   }
-
+/*
   #prevBtn {
     
-    
+    position: absolute;
     cursor: pointer;
     padding: 16px;
     color: #0a0a0a;
@@ -201,8 +201,7 @@ main .sobre-nosotros {
 
   #nextBtn {
 
-    
- 
+    posit
     cursor: pointer;
     padding: 16px;
     color: rgb(8, 8, 8);
@@ -213,19 +212,9 @@ main .sobre-nosotros {
     margin-bottom: 50px;
    
    
-  }
+  }*/
 
-  @media screen and (max-width:500px) {
-    #carousel-container{
-        width: 100%;
-    }
-    #prevBtn{
-        padding: 5px;
-    }
-    #nextBtn{
-        padding: 5px;
-    }
-}
+
 
 
 /* footer */
@@ -400,7 +389,19 @@ main .sobre-nosotros {
     margin-bottom: 5px;
 }
 
+/* media queries */
 
+@media screen and (max-width:500px) {
+    .carousel-container{
+       width: 100%;
+    }
+    #prevBtn{
+        padding: 5px;
+    }
+    #nextBtn{
+        padding: 5px;
+    }
+  }
 
 
 @media (max-width: 880px) {
