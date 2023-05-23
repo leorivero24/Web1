@@ -219,7 +219,9 @@ main .sobre-nosotros {
     #carousel-container{
         width: 100%;
     }
-    #prevBtn,
+    #prevBtn{
+        padding: 5px;
+    }
     #nextBtn{
         padding: 5px;
     }
