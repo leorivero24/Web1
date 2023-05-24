@@ -28,6 +28,8 @@ window.onscroll = function(){
 
 }
 
+// Carrusel JS
+
 var slideIndex = 0;
 var slides = [
   "imagen1.jpg",

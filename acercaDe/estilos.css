@@ -191,7 +191,7 @@ main .sobre-nosotros {
   
   .carousel-button {
     position: absolute;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
