@@ -19,7 +19,7 @@
         <nav>
             <a href="../index.html">Inicio</a>
             <a href="../acercaDe/acercaDe.html">Acerca De</a>
-            <a href="mailto:leo.exerivero@gmail.com">M@il</a>
+            <a href="mailto:leo.exerivero@gmail.com">Correo</a>
             <a href="#">Contacto</a>
 
 
@@ -34,6 +34,7 @@
                     style="stroke: none; fill: #59ABE3;"></path>
             </svg></div>
     </header>
+ 
 
     <div class="container">
         <div class="row">
@@ -42,54 +43,72 @@
         <div class="row">
             <h4 class="subtitle" style="text-align:center">We'd love to hear from you!</h4>
         </div>
-        <div class="row input-container">
-            <div class="col-xs-12">
-                <div class="styled-input wide">
-                    <input type="text" required />
-                    <label>Nombre</label>
+        <form id="form">
+            <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" id="name" required />
+                        <label for="name">Nombre</label>
+                        <span id="nameError" class="error" style="color: white;"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="styled-input">
-                    <input type="text" required />
-                    <label>Mail@</label>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input">
+                        <input type="text" id="email" required />
+                        <label>mail@</label>
+                        <span id="emailError" class="error" style="color: white;"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="styled-input" style="float:right;">
-                    <input type="text" required />
-                    <label>Telefono</label>
+
+                <div class="col-md-6 col-sm-12" >
+                    <div class="styled-input" style="margin-left: 63px;">
+                        <input type="text" id="phone" required />
+                        <label>Telefono</label>
+                         <span id="phoneError" class="error" style="color: white;"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="styled-input wide">
-                    <textarea required></textarea>
-                    <label>Mensaje</label>
+
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea required id="message"></textarea>
+                        <label>Mensaje</label>
+                        <span id="messageError" class="error" style="color: white;"></span>
+                    </div>
                 </div>
+               
+                <div class="col-xs-12">
+                    <div class="submit-btn" onclick="submitForm()">Send Message</div>
+                </div>     
+                <div id="submittedData" style="color: white; margin-top: 2px;"></div>  
             </div>
-            <div class="col-xs-12">
-                <div class="submit-btn">Send Message</div>
-            </div>
-        </div>
+            
+        </form>
+        
     </div>
+  
 
     <footer class="footer-distributed">
 
         <div class="footer-left">
 
-            <h3>L&H<span>Informática</span></h3>
+            <h3>Company<span>logo</span></h3>
 
             <p class="footer-links">
                 <a href="../index.html " class="link-1">Home</a>
 
-                <a href="#">Acerca de</a>
+                <a href="#">Blog</a>
 
-                <a href="#">E-Mail</a>
+                <a href="#">Pricing</a>
 
-                <a href="#">Contacto</a>
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
             </p>
 
-            <p class="footer-company-name">L&H Informática © 2023</p>
+            <p class="footer-company-name">Company Name © 2015</p>
         </div>
 
         <div class="footer-center">
@@ -106,7 +125,7 @@
 
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@company.com">lyhinformatica@speedy.com.ar</a></p>
+                <p><a href="mailto:support@company.com">support@company.com</a></p>
             </div>
 
         </div>
@@ -114,7 +133,8 @@
         <div class="footer-right">
 
             <p class="footer-company-about">
-                <span>Acerca de la compañia</span>  Dedicada a la Tecnología, con una gran trayectoria en la ciuad de San Luis y todo el interior.
+                <span>About the company</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod
+                convallis velit, eu auctor lacus vehicula sit amet.
             </p>
 
             <div class="footer-icons">
@@ -134,7 +154,7 @@
     </section>
     <script src="https://kit.fontawesome.com/8413f115b4.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    
+
 </body>
 
 </html>
