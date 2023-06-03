@@ -140,17 +140,25 @@ main .sobre-nosotros {
     width: 35%;
 }
 
-.contenido-textos h3 {
+.contenido-textos h3{
     margin-bottom: 15px;
 }
 
+
+
+
 .titulo-acerca {
+    background: linear-gradient(rgba(1, 95, 236, 0.838), rgba(17, 21, 34, 0.781));
+    -webkit-background-clip: text;
+    color: transparent;
     text-align: center;
 }
 
 .contenido-textos p {
+    color: rgb(0, 0, 3);
     padding: 0px 0px 30px 15px;
-    font-weight: 300;
+    font-style: oblique;
+    font-weight:bold;
     text-align: justify;
 }
 
