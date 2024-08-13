@@ -105,7 +105,19 @@ header .textos-header {
 
 .textos-header h1 {
     font-size: 50px;
+    
+}
+
+.textos-header h2{
     color: white;
+    font-style: italic;
+}
+.nombre-negro {
+    color: black; /* Estilo para "PC" */
+}
+
+.nombre-verde {
+    color: greenyellow;
 }
 
 
@@ -452,7 +464,7 @@ main .sobre-nosotros {
 }
 
 .footer-distributed h3 span {
-    color: lightseagreen;
+    color: rgb(0, 0, 0);
 }
 
 
